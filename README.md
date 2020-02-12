@@ -1,7 +1,6 @@
 # Netlify Plugin Debug Cache
 
-Add a page on your site with current NPM modules & their download stats
-
+Debug & verify the contents of your Netlify build cache
 
 ## Install
 
