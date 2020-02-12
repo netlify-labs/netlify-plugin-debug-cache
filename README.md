@@ -24,3 +24,7 @@ After the build is complete, download the built assets and inspect the cache man
 In Netlify, you can download the build with this icon
 
 ![image](https://user-images.githubusercontent.com/532272/70269557-7faf2600-1757-11ea-8a3b-4ce38ce6d6d2.png)
+
+Then inspect the cache output
+
+![image](https://user-images.githubusercontent.com/532272/74368535-b40f1600-4d88-11ea-98ee-8d5e2a06168c.png)
