@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-debug-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Debug what is in your Netlify Build Cache",
   "main": "index.js",
   "scripts": {
