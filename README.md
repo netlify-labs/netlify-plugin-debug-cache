@@ -4,20 +4,14 @@ Debug & verify the contents of your Netlify build cache
 
 ## Install
 
-```bash
-npm install netlify-plugin-debug-cache
+To install, add the following lines to your `netlify.toml` file, after any other plugins you may have added:
+
+```toml
+[[plugins]]
+package = "netlify-plugin-debug-cache"
 ```
 
-## Usage
-
-In your Netlify config file, add the plugin
-
-```yml
-# Build plugins
-plugins:
-  # Make sure to add as the last plugin
-  - package: netlify-plugin-debug-cache
-```
+Note: The `[[plugins]]` line is required for each plugin, even if you have other plugins in your `netlify.toml` file already.
 
 After the build is complete, download the built assets and inspect the cache manifest file.
 
