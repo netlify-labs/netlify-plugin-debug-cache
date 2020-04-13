@@ -16,6 +16,9 @@
     "type": "git",
     "url": "https://github.com/netlify-labs/netlify-plugin-debug-cache"
   },
+  "bugs": {
+    "url": "https://github.com/netlify-labs/netlify-plugin-debug-cache/issues"
+  },
   "keywords": [
     "netlify",
     "netlify-plugin",
