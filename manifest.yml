@@ -1,0 +1,5 @@
+name: netlify-plugin-debug-cache
+inputs:
+  - name: outputFile
+    description: Output the result in this file, published with the Site
+    default: cache-output.json
