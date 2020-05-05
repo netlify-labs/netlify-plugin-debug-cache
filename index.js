@@ -3,6 +3,8 @@ const path = require('path')
 const { promisify } = require('util')
 const writeFile = promisify(fs.writeFile)
 
+const makeDir = require('make-dir')
+
 module.exports = {
     onEnd: async ({ constants, inputs, utils }) => {
       const { PUBLISH_DIR } = constants
@@ -10,6 +12,7 @@ module.exports = {
       const cacheManifestPath = path.join(PUBLISH_DIR, cacheManifestFileName)
       console.log('Saving cache file manifest for debugging...')
       const files = await utils.cache.list()
+      await makeDir(PUBLISH_DIR)
       await writeFile(cacheManifestPath, JSON.stringify(files, null, 2))
       console.log(`Cache file count: ${files.length}`)
       console.log(`Cache manifest saved to ${cacheManifestPath}`)
