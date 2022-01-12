@@ -6,7 +6,7 @@ const writeFile = promisify(fs.writeFile)
 const makeDir = require('make-dir')
 
 module.exports = {
-    onEnd: async ({ constants, inputs, utils }) => {
+    onPostBuild: async ({ constants, inputs, utils }) => {
       const { PUBLISH_DIR } = constants
       const cacheManifestFileName = inputs.outputFile
       const cacheManifestPath = path.join(PUBLISH_DIR, cacheManifestFileName)
